@@ -24,7 +24,7 @@
 
 //    @include absolute(auto, auto, 0%, 50%, translate(-50%, 0%));
 
-@mixin font-size($ls: 0.03em, $fw: 400, $fs: 14px, $lh: 1.71) {
+@mixin font-size($ls: 0.04em, $fw: 400, $fs: 14px, $lh: 1.714) {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     letter-spacing: $ls;

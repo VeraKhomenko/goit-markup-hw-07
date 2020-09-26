@@ -31,7 +31,7 @@
 }
 
 .soclinkfoot__links:not(:last-child) {
-    margin-right: 10px;
+    @extend .sociallinks__link:not(:last-child)
 }
 
 .soclinkfoot__icon {

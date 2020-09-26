@@ -15,7 +15,7 @@
 
 .flexlist {
     &__fourrowel {
-        width: calc((100% - 90px) / 4);
+        width: calc((100% - 30px * 3) / 4);
         margin-right: 30px;
     }
 
@@ -71,7 +71,7 @@
     }
 
     &__flexelement:last-child {
-        margin-right: 0;
+        @extend .flexlist__fourrowel:last-child
     }
 
     &__features-uppercase {
