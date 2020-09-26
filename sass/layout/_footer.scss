@@ -13,7 +13,6 @@
 
 .footerlist {
     &:first-child {
-        //?
         margin-top: 9px;
         margin-bottom: 9px;
     }
@@ -30,8 +29,7 @@
 
 
     &__contact-link {
-
-        color: rgba(255, 255, 255, 0.6);
+        color: $color-contact-link;
     }
 }
 
@@ -42,7 +40,6 @@
         @extend .flexlist__iconfeatures--uppercase;
     }
 }
-
 
 .footer-form-sign {
     display: inline-block;

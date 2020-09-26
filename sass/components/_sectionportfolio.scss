@@ -7,7 +7,6 @@
     display: flex;
     justify-content: center;
 
-
     &__item+&__item {
         margin-left: 8px;
     }
@@ -22,7 +21,6 @@
     align-items: center;
     justify-content: center;
 
-
     &__portfolioelement {
         // width: calc((100% - 60px) / 3);
         margin-right: 30px;
@@ -35,9 +33,7 @@
     &__portfolioelement:hover {
         border: 1px solid $border-color;
         box-sizing: border-box;
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-            0px 4px 4px rgba(0, 0, 0, 0.06),
-            1px 4px 6px rgba(0, 0, 0, 0.16);
+        box-shadow: $shadow-portfolio;
     }
 
     &__portfolioelement:nth-child(3n) {
@@ -65,14 +61,14 @@
     top: 0;
     left: 0;
     margin: 0;
-    padding: 63px 24px;
+    padding: 64px 24px;
     color: $opposite-text-color;
     background: rgba(33, 150, 243, 0.9);
     text-align: left;
     font: normal normal 18px/1.556 'Roboto',
         sans-serif;
     letter-spacing: 0.03em;
-    transform: translateY(101%);
+    transform: translateY(100%);
     transition: transform $time $time-function;
     /* @mixin absolute */
 }
@@ -88,10 +84,8 @@
 
 
     &__title {
+        @include font-size(0.06em, 700, 18px, 1.714);
         padding-bottom: 4px;
-        font: normal 700 18px/1.71 Roboto,
-            sans-serif;
-        letter-spacing: 0.06em;
         color: $primary-text-color;
     }
 

@@ -8,12 +8,10 @@
     margin-left: 93px;
 
     &__focused {
+        @include font-size(0.02em, 500, 14px, 1.142);
         display: inline-flex;
         padding-top: 32px;
         padding-bottom: 32px;
-        font-weight: 500;
-        line-height: 1.142;
-        letter-spacing: 0.02em;
         color: $primary-text-color;
         transition: color $time $time-function;
     }
@@ -44,7 +42,6 @@
         margin-left: 50px;
     }
 }
-
 
 .contact {
     display: flex;

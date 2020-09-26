@@ -2,13 +2,11 @@
     min-width: 231px;
     text-align: start;
 
-
     &__logostudio {
         @include font-logo();
         display: inline-block;
         margin-bottom: 10px;
         margin-top: 0;
-
         color: $color-studio;
     }
 
@@ -20,6 +18,4 @@
     &__half {
         color: $opposite-text-color;
     }
-
-
 }

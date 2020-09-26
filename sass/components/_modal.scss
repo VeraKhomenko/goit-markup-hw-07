@@ -12,7 +12,7 @@
         position: absolute;
         top: 10%;
         left: 50%;
-        transform: translateX(-50%) scale(1);
+        transform: translateX(-50%) scale(1); //@include absolute(auto, auto, 0%, 50%, translate(-50%, 0%)); - из-за scale не получается
         width: 100%;
         max-width: 528px;
         min-height: 581px;
@@ -22,8 +22,6 @@
         border-radius: 4px;
     }
 }
-
-
 
 .is-hidden {
     opacity: 0;
@@ -43,7 +41,6 @@
     top: 8px;
     right: 8px;
 
-
     &__icon-close {
         width: 30px;
         height: 30px;
@@ -51,7 +48,6 @@
         background: $opposite-text-color;
         border: 1px solid rgba(0, 0, 0, 0.1);
         fill: currentColor;
-
     }
 
     &__icon-close:hover,
